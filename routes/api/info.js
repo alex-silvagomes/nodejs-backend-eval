@@ -6,13 +6,6 @@ const domains_properties = require('../api/quality-gate/domains');
 
 
 //================== Official API Call ==================\\
-router.get('/rdm-properties', async function (req, res) {
-  res.setHeader("Content-Type", "application/json");
-  
-  res.json(rdm_properties);
-
-});
-
 router.get('/healthcheck', async function (req, res) {
 
   res.setHeader("Content-Type", "application/json");
@@ -39,6 +32,12 @@ router.get('/healthcheck', async function (req, res) {
   }
 });
 
+router.get('/rdm-properties', async function (req, res) {
+  res.setHeader("Content-Type", "application/json");
+  
+  res.json(rdm_properties);
+
+});
 
 router.get('/domains', async function (req, res) {
   res.setHeader("Content-Type", "application/json");
@@ -72,7 +71,7 @@ function convertToTimeString(seconds) {
 
 function memoryUsage() {
   const used = process.memoryUsage().heapUsed / 1024 / 1024;
-  let text = `${Math.round(used * 100) / 100}MB`;
+  const text = `${Math.round(used * 100) / 100}MB`;
 
   return text
 }

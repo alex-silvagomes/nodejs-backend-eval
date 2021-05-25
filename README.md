@@ -28,7 +28,6 @@ https://bitbucket.bradesco.com.br:8443/scm/ticket/api-quality-gate.git
 a) URIs /info
   * __healthcheck__: http://localhost:3000/api/quality-gate/info/healthcheck
   * __rdm-properties__: http://localhost:3000/api/quality-gate/info/rdm-properties
-  * __ppmc-properties__: http://localhost:3000/api/quality-gate/info/ppmc-properties
   * __domains-properties__: http://localhost:3000/api/quality-gate/info/domains
 
 
