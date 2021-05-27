@@ -9,13 +9,11 @@ api-quality-gate em NodeJS
 >__download__: https://nodejs.org/en/download/
 
 1.2. Faca um clone do repositorio do Bitbucket
-* bitbucket
-https://bitbucket.bradesco.com.br:8443/scm/ticket/api-quality-gate.git
 * Recomendo que você separe um Workspace do VisualCode para esta configuração
 
 > Execute comando: Terminal (CMD)
 ```
-  git clone https://bitbucket.bradesco.com.br:8443/scm/ticket/api-quality-gate.git
+  git clone https://github.com/alex-silvagomes/nodejs-backend-eval.git
   cd api-quality-gate
   npm install
   npm start
